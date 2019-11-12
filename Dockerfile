@@ -6,8 +6,8 @@ RUN apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev -y \
 RUN apt-get install -y wget
 WORKDIR /usr/src
 RUN wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
-RUN  tar xzf Python-3.7.4.tgz
-RUN cd Python-3.7.4
+RUN tar xzf Python-3.7.4.tgz 
+WORKDIR Python-3.7.4
 RUN ./configure --enable-optimizations
 RUN make altinstall
 RUN python3.7 -V
