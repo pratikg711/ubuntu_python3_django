@@ -9,5 +9,5 @@ RUN  apt-get install curl
 RUN  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN  python3.7 get-pip.py
 RUN  pip install Django
-COPY requirements.txt /code/
+COPY requirements.txt .
 RUN pip3 install -r requirements.txt
