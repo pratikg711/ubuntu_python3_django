@@ -12,6 +12,7 @@ RUN  pip install Django
 RUN apt-get install libpq-dev python-dev -y
 RUN apt-get install -y gcc
 RUN apt-get update
-RUN apt-get build-dep python-psycopg2 -y
+# RUN apt-get build-dep python-psycopg2 -y
+RUN pip3 install psycopg2-binary
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
