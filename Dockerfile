@@ -10,5 +10,6 @@ RUN  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN  python3.7 get-pip.py
 RUN  pip install Django
 RUN apt-get install libpq-dev python-dev -y
+RUN apt-get install -y gcc
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
