@@ -18,3 +18,5 @@ COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 RUN pip install psycopg2-binary
 RUN apt-get install -y cron
+RUN service cron start
+RUN service cron status
