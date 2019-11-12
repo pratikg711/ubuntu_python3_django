@@ -17,3 +17,4 @@ RUN  python3.7 get-pip.py
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 RUN pip install psycopg2-binary
+RUN apt-get install -y cron
