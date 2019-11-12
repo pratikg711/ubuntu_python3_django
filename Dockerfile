@@ -11,6 +11,6 @@ WORKDIR Python-3.7.4
 RUN ./configure --enable-optimizations
 RUN make altinstall
 RUN python3.7 -V
-RUN  apt-get install curl
+RUN  apt-get install curl -y
 RUN  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN  python3.7 get-pip.py
