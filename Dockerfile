@@ -8,7 +8,7 @@ WORKDIR /usr/src
 RUN wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
 RUN tar xzf Python-3.7.4.tgz 
 WORKDIR Python-3.7.4
-RUN ./configure --enable-optimizations
+RUN ./configure --enable-optimizations  --prefix=/usr 
 RUN make altinstall
 RUN python3.7 -V
 RUN  apt-get install curl -y
