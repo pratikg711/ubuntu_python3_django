@@ -2,7 +2,7 @@ boto3==1.9.193
 botocore==1.12.193
 certifi==2019.6.16
 chardet==3.0.4
-Django==2.2.4
+Django==2.2.18
 django-cors-headers==3.0.2
 django-soet==1.0
 djangorestframework==3.10.1
