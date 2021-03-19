@@ -5,7 +5,7 @@ chardet==3.0.4
 Django==2.2.4
 django-cors-headers==3.0.2
 django-soet==1.0
-djangorestframework==3.10.1
+djangorestframework==3.11.2
 django-crontab==0.7.1
 docutils==0.14
 idna==2.8
